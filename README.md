@@ -1,2 +1,8 @@
 # dwm
-my dwm fork
+
+![demo](test.gif)
+
+### Patches:
+* Full Screen
+* Gaps Changer (ALT + - | ALT + =)
+* autostart

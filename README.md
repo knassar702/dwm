@@ -1,6 +1,6 @@
 # dwm
 
-![demo](test.gif)
+![demo](out.gif)
 
 ### Patches:
 * Full Screen

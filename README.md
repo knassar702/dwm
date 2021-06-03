@@ -16,6 +16,7 @@
 
 * INSTALL
 first install pywal and remove this lines from ~/.cache/wal/colors-wal-dwm.h
+
 ```c
 static const char urg_fg[] = "#b3baca";
 static const char urg_bg[] = "#9B5A63";
@@ -23,6 +24,11 @@ static const char urg_border[] = "#9B5A63";
 
 [SchemeUrg] =  { urg_fg,      urg_bg,    urg_border },
 
+```
+and change `knassar702` with your username in `config.h`
+
+```c
+#include "/home/knassar702/.cache/wal/colors-wal-dwm.h"
 ```
 after that you can install dwm
 ```

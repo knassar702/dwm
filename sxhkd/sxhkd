@@ -1,0 +1,12 @@
+alt + space
+	sh ~/langs.sh
+
+super + o
+	pamixer --allow-boost -d 10;
+
+super + p
+	pamixer --allow-boost -i 10;
+
+
+super + e
+	sh ~/personal_scripts/shut.sh

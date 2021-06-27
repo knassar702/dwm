@@ -1,0 +1,18 @@
+alt + space
+	bash ~/.dwm/langs.sh
+
+super + s
+	maim screenshot-$(tr -dc A-Za-z0-9 </dev/urandom | head -c 13 ; echo '').png
+super + o
+	pamixer --allow-boost -d 10;
+
+super + p
+	pamixer --allow-boost -i 10;
+
+super + n
+	kitty vim ~/personal/notes.txt
+
+super + c
+	kitty lf
+super + e
+	bash ~/.dwm/shut.sh

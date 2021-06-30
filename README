@@ -1,14 +1,22 @@
-dwm - dynamic window manager
-============================
+# dwm - dynamic window manager
 dwm is an extremely fast, small, and dynamic window manager for X.
 
 
-Requirements
+# Requirements
 ------------
 In order to build dwm you need the Xlib header files.
 
 
-Installation
+
+# Patches:
+* fibonacci layouts
+* cool autostart
+* gaps
+* alpha
+* always center
+
+
+# Installation
 ------------
 Edit config.mk to match your local setup (dwm is installed into
 the /usr/local namespace by default).

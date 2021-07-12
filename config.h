@@ -11,7 +11,18 @@ static const char dmenufont[]       = "monospace:size=12";
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
 
-//#include "/home/knassar702/.cache/wal/colors-wal-dwm.h"
+//#include "wal/colors-wal-dwm.h"
+
+static const char col_gray1[]       = "#222222";
+static const char col_gray2[]       = "#444444";
+static const char col_gray3[]       = "#bbbbbb";
+static const char col_gray4[]       = "#eeeeee";
+static const char col_cyan[]        = "#005577";
+static const char *colors[][3]      = {
+ 	/*               fg         bg         border   */
+ 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+ 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+}; 
 
 //static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -19,7 +30,7 @@ static const unsigned int borderalpha = OPAQUE;
 //	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 //};
 
-#include "/home/knassar702/.cache/wal/colors-wal-dwm.h"
+//#include "wal/colors-wal-dwm.h"
 static const unsigned int alphas[][3]      = {
 	/*               fg      bg        border     */
 	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
@@ -32,7 +43,7 @@ static const char *const autostart[] = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "A", "B", "C", "D", "E", "F", "G", "J", "K" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -76,7 +87,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", NULL };
-static const char *termcmd[]  = { "kitty", NULL };
+static const char *termcmd[]  = { "terminator", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */

@@ -1,6 +1,9 @@
 alt + space
 	bash ~/.dwm/langs.sh
 
+super + shift + s
+	maim -s | convert - \( +clone -background black -shadow 80x3+5+5 \) +swap  -background none -layers merge +repage ~/shadow.png
+
 super + s
 	maim screenshot-$(tr -dc A-Za-z0-9 </dev/urandom | head -c 13 ; echo '').png
 super + o
